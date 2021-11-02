@@ -1,0 +1,28 @@
+.navBgColor {
+  background-color: #06D6A0 !important;
+}
+
+.logoMargins {
+  margin: auto !important;
+}
+
+.toolbarPadding {
+  padding-right: 20px !important;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+}
+
+.menuItem {
+  text-decoration: none !important;
+  color: #05668D;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    padding-right: 50px;
+  }
+}

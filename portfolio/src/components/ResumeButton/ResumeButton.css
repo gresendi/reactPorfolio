@@ -1,0 +1,23 @@
+.resumeBtn {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border: #118AB2 solid 2px;
+  background-color: #118AB2;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+}
+
+.resumeBtn:hover {
+  color: #118AB2;
+  background-color: #FFD166;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .resumeBtn {
+    display: none;
+  }
+}

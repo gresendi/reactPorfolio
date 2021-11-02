@@ -1,14 +1,17 @@
+import NavBar from "../../components/NavBar"
+import SkillList from '../../components/SkillList/SkillList'
+
 
 const Home = () => {
   return (
+    <>
 
-    <div className="container">
-      <div className="row">
-        <div className="col-8">
-          <h1>this is the Home page</h1>
-        </div>
-      </div>
-    </div>
+    <NavBar/>
+    <SkillList />
+    
+    </>
+
+    
 
   )
 }

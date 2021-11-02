@@ -7,35 +7,29 @@ import {
 
 import Home from './pages/Home'
 import Projects from './pages/Projects'
+import NavBar from "./components/NavBar";
+import Skills from './pages/Skills'
+import Resume from './pages/Resume'
 
 
 function App() {
   return (
     <Router>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-          Home
-        </Link>
-          <Link className="navbar-brand" to="/Projects">
-           Projects
-          </Link>
-      </div>
-    </nav>
-    <Switch>
-      <Route exact path='/'>
-        <Home/>
-      </Route>
-        <Route exact path='/projects'>
+      <NavBar />
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route path='/projects'>
           <Projects />
         </Route>
-    </Switch>
-    
-
-
-
-
-
+        <Route path='/toolbelt'>
+          <Skills />
+        </Route>
+        <Route path='/resume'>
+          <Resume />
+        </Route>
+      </Switch>
     </Router>
   );
 }
