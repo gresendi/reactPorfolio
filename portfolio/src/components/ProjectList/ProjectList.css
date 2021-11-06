@@ -1,0 +1,52 @@
+.projectContainer {
+  padding-bottom: 200px;
+}
+
+.projectsTitle {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+
+.noDecor {
+  text-decoration: none !important;
+}
+
+.linkIcon:hover {
+  cursor: pointer !important;
+}
+
+.imgListContainer {
+  height: 600px !important;
+  width: 300px !important;
+  margin: auto !important;
+}
+
+.projImg {
+  height: 300px !important;
+}
+
+.descArea {
+  margin-bottom: 60px;
+  height: 240px;
+  overflow: visible !important;
+  word-wrap: break-word !important;
+}
+
+.MuiImageListItemBar-title {
+  overflow: visible !important;
+  white-space: pre-wrap !important;
+}
+
+@media screen and (min-width: 570px) {
+  .imgListContainer {
+    height: 300px !important;
+    width: 900px !important;
+    margin: auto !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .descArea {
+    margin-bottom: 60px;
+    height: 240px;
+  }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+}
+
+.aboutMeContainer {
+  background-color: azure;
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.deleteCardStyle {
+  box-shadow: none !important;
+  background-color: azure !important;
+}
+
+.headshot {
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px #06D6A0;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.headshot:hover {
+  box-shadow: 15px 15px #06D6A0;
+}
+
+.githubIcon {
+  display: block !important;
+  margin: 20px 0px 0px auto !important;
+  fill: #118AB2;
+  height: 50px;
+}
+
+.githubIcon:hover {
+  cursor: pointer;
+  fill: #FFD166;
+}
+
+.linkedinIcon {
+  display: block !important;
+  margin: 20px auto 0px 0px !important;
+  fill: #118AB2;
+}
+
+.linkedinIcon:hover {
+  cursor: pointer;
+  fill: #FFD166;
+}
+
+.aboutMeArea {
+  max-width: 300px !important;
+  margin-left: 30px;
+}
+
+.aboutMeTitle {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.aboutMeText {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 570px) {
+  .aboutMeArea {
+    max-width: 600px !important;
+  }
+  .aboutMeArea {
+    margin-top: 200px;
+  }
+  .headshot {
+    height: 350px;
+    margin-top: 300px;
+  }
+  .headLinksContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .headshot {
+    height: 350px;
+    margin-top: 300px;
+  }
+  .headLinksContainer {
+    margin-left: 300px;
+    margin-right: 0px;
+  }
+}
