@@ -3,27 +3,27 @@
 }
 
 .aboutMeContainer {
-  background-color: azure;
+  background-color: #CAF0F8;
   margin: 0px;
   min-height: 100vh;
 }
 
 .deleteCardStyle {
   box-shadow: none !important;
-  background-color: azure !important;
+  background-color: #CAF0F8 !important;
 }
 
 .headshot {
   height: 300px;
   border-radius: 20px;
-  box-shadow: 10px 10px #06D6A0;
+  box-shadow: 10px 10px #0096C7;
   display: block;
   margin: auto;
   margin-top: 100px;
 }
 
 .headshot:hover {
-  box-shadow: 15px 15px #06D6A0;
+  box-shadow: 15px 15px #0096C7;
 }
 
 .githubIcon {
@@ -35,7 +35,7 @@
 
 .githubIcon:hover {
   cursor: pointer;
-  fill: #FFD166;
+  fill: #0077B6;
 }
 
 .linkedinIcon {
@@ -46,7 +46,7 @@
 
 .linkedinIcon:hover {
   cursor: pointer;
-  fill: #FFD166;
+  fill: #0077B6;
 }
 
 .aboutMeArea {

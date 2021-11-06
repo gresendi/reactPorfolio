@@ -5,23 +5,23 @@
 
 .skillIcon {
   margin-top: 30px !important;
-  color: #118AB2 !important;
+  color: #CAF0F8 !important;
   box-shadow: none !important;
 }
 
 .skillItem {
-  color: #118AB2 !important;
+  color: #CAF0F8 !important;
   box-shadow: none !important;
 }
 
 .skillsContainer {
-  background-color: #FFD166 !important;
+  background-color: #0077B6 !important;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
 .skillsDescriptionArea {
-  background-color: #FFD166 !important;
+  background-color: #0077B6 !important;
   box-shadow: none !important;
   text-align: center;
 }
@@ -29,6 +29,7 @@
 .skillsTitle {
   font-size: 50px;
   margin-bottom: 20px;
+  color: #CAF0F8 !important;
 }
 
 .skillsText {
@@ -36,6 +37,7 @@
   text-align: left;
   margin-left: 40px;
   margin-right: 20px;
+  color: #CAF0F8;
 }
 
 @media screen and (min-width: 570px) {
