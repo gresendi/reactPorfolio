@@ -78,7 +78,7 @@ const AboutMe = () => {
             </div>
           </Item>
         </Grid>
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} sm={6} >
           <Item className="aboutMeArea deleteCardStyle">
             <h1 className="aboutMeTitle">About Me</h1>
             <p className="aboutMeText">{aboutMeText}</p>
