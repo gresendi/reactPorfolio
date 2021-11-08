@@ -173,7 +173,7 @@ const SkillList = () => {
           rowSpacing={2}
           columnSpacing={{ xs: 1, sm: 30 }}
         >
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} >
             <Item className="skillsDescriptionArea">
               <h1 className="skillsTitle">{skillsDescription.title}</h1>
               <p className="skillsText">{skillsDescription.description}</p>
@@ -191,7 +191,7 @@ const SkillList = () => {
               >
                 {skills.map(skill => {
                   return (
-                    <Grid item xs={4} sm={3}>
+                    <Grid item xs={4} sm={3} >
                       <Item className="skillItem skillIcon">
                         {skill.icon}
                       </Item>
