@@ -79,10 +79,10 @@ const AboutMe = () => {
           </Item>
         </Grid>
         <Grid item xs={12} sm={6} >
-          <Item className="aboutMeArea deleteCardStyle">
+          <Item className="aboutMeArea deleteCardStyle ">
             <h1 className="aboutMeTitle">About Me</h1>
-            <p className="aboutMeText">{aboutMeText}</p>
-            <p className="aboutMeText">{aboutMeContinued}</p>
+            <p className="aboutMeText p-2 ">{aboutMeText}</p>
+            <p className="aboutMeText p-2">{aboutMeContinued}</p>
           </Item>
         </Grid>
       </Grid>
