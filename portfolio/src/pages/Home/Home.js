@@ -1,6 +1,6 @@
 import NavBar from '../../components/NavBar/NavBar'
 import AboutMe from '../../components/AboutMe/AboutMe'
-
+import ClassTimeline from '../../components/ClassTimeline/ClassTimeline'
 
 import SkillList from '../../components/SkillList/SkillList'
 import ProjectList from '../../components/ProjectList/ProjectList'
@@ -12,7 +12,7 @@ const Home = () => {
       <NavBar />
       
       <AboutMe />
-      
+      <ClassTimeline />
       <SkillList />
       <ProjectList />
       <Footer />
