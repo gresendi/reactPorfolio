@@ -10,6 +10,7 @@ const Home = () => {
     <>
 
       <NavBar />
+      
       <AboutMe />
       
       <SkillList />

@@ -9,6 +9,8 @@ import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import pubImg from '../../images/project-screenshots/PUB-icon.png'
 import binTreeImg from '../../images/project-screenshots/binary-tree-icon.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
+import foodForYou from '../../images/project-screenshots/foodForYou.png'
+import mePlants from '../../images/project-screenshots/mePlant.png'
 import './ProjectList.css'
 
 const projects = [
@@ -22,20 +24,20 @@ const projects = [
     description: `A full MERN Stack application geared toward helping employers and HR departments give their applicants the best application experience possible, while streamlining communication during the hiring process.`
   },
   {
-    img: pubImg,
-    title: 'PUB',
-    author: '#Node.js #FullStack',
-    gitHubLink: 'https://github.com/sequint/pub',
-    deployedSite: 'https://pure-brook-86019.herokuapp.com/',
-    description: `Stands for 'Project Hub'. This app allows you to create and update progress on projects you are working on. It also allows other users to track and comment on your projects to help you out!`
+    img: foodForYou,
+    title: 'Food for You',
+    author: '#HTML #CSS #Javascript',
+    gitHubLink: 'https://github.com/gresendi/FoodForYou',
+    deployedSite: 'https://gresendi.github.io/Project1/index.html',
+    description: 'A basic web application designed to help with deciding on what to cook. Enter in the ingredients that you have in your fridge and click on the "Recipes" tab. The system will generate a list of recipes that includes the ingredients you have inputed in. At the bottom of each recipe, there is a "View Recipe" button, where a module will pop up and give you the choice of saving that specific recipe. When you save a recipe, it will be saved in "My Favorites" tab, so that you can keep the recipes you like. If you change your mind, you can remove the saved recipe in "My Favorites" tab at the bottom of the recipe.'
   },
   {
-    img: binTreeImg,
-    title: 'C++ Binary Tree',
-    author: '#C++ #search #memory-allocation',
-    gitHubLink: 'https://github.com/sequint/int-binary-tree',
-    deployedSite: 'https://github.com/sequint/int-binary-tree',
-    description: `C++ console app that can add/delete numbers from a binary tree, get leaf numbers on the tree, and return the trees height or width.`
+    img: mePlants,
+    title: 'mePlants',
+    author: '#HTML #CSS #Javascript #Bootstrap, #Firebase',
+    gitHubLink: 'https://github.com/gresendi/mePlants',
+    deployedSite: 'https://meplant-app.herokuapp.com/',
+    description: "This web application is a blog site for plants, and helps a user to track their plants and watering schedules. This application is powered by HTML, CSS, Javascript, Bootstrap, Firebase and others."
   }
 ]
 
@@ -47,7 +49,7 @@ const ProjectList = () => {
   })
 
   return(
-    <div className="projectContainer">
+    <div id = 'projects' className="projectContainer">
       <h1 className="projectsTitle">Project Highlights</h1>
       <SeeMoreBtn path="projects" />
       <ImageList ImageList className="imgListContainer" cols={1} >

@@ -1,5 +1,5 @@
 .projectContainer {
-  padding-bottom: 200px;
+  min-height: 75vh;
 }
 
 .projectsTitle {
@@ -20,6 +20,7 @@
   height: 600px !important;
   width: 300px !important;
   margin: auto !important;
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 
 .projImg {

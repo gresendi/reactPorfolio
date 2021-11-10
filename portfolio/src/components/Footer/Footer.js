@@ -12,18 +12,18 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const handleGitHubClick = event => {
   event.preventDefault()
-  window.location = 'https://github.com/sequint'
+  window.location = 'https://github.com/gresendi'
 }
 
 const handleLinkedInClick = event => {
   event.preventDefault()
-  window.location = 'https://www.linkedin.com/in/steven-quintana-278b0091/'
+  window.location = 'https://www.linkedin.com/in/gilberto-resendiz/'
 }
 
 const Footer = () => {
   return(
     <div className="footerContainer">
-      <h2 className="footLinksTitle">Links</h2>
+      
       <Box sx={{ width: '100%' }}>
         <Grid
           container
@@ -64,7 +64,7 @@ const Footer = () => {
       <Divider sx={{ width: 200, margin: 'auto' }} />
       <div className="copyrightArea">
         <CopyrightIcon className="copyrightIcon" />
-        <p className="copyrightText">I Don't Think I Actually Have A Copyright</p>
+        <p className="copyrightText">Gilberto Resendiz 2021</p>
       </div>
     </div>
   )

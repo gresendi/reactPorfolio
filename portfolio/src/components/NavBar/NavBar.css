@@ -21,6 +21,11 @@
   color: #05668D;
 }
 
+.navItem {
+  text-decoration: none !important;
+  color: white;
+}
+
 @media screen and (max-width: 600px) {
   .logo {
     padding-right: 50px;

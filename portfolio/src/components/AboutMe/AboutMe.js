@@ -26,7 +26,7 @@ const handleLinkedInClick = event => {
 
 const AboutMe = () => {
   return (
-    <Box className="aboutMeContainer" sx={{ width: '100%' }}>
+    <Box id = 'about' className="aboutMeContainer" sx={{ width: '100%' }}>
       <Grid
         container
         direction="row"

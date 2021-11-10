@@ -18,6 +18,7 @@
   background-color: #0077B6 !important;
   padding-top: 200px;
   padding-bottom: 200px;
+  min-height: 75vh;
 }
 
 .skillsDescriptionArea {

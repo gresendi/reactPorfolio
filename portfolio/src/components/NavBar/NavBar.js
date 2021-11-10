@@ -20,6 +20,9 @@ import CodeIcon from '@mui/icons-material/Code'
 import ArchitectureIcon from '@mui/icons-material/Architecture'
 import AttachFileIcon from '@mui/icons-material/AttachFile'
 import ResumeButton from '../ResumeButton/ResumeButton'
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+
 
 import './NavBar.css'
 
@@ -112,13 +115,27 @@ const NavBar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className="logoMargins" variant="h6" noWrap component="div">
-            <img
-              src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.creativefabrica.com%2Fproduct%2Fmonogram-gr-logo-design%2F&psig=AOvVaw011LUssNB-HEQPCzkskgH0&ust=1635978175683000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCO7unb-vMCFQAAAAAdAAAAABAD'
-              alt="Site logo"
-              className="logo"
-            />
-          </Typography>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <MenuItem >
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <a className='navItem' href="#about">Home</a>
+              </Typography>
+            </MenuItem>
+            <MenuItem >
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <a className='navItem' href="#toolbelt">Toolbelt</a>
+              </Typography>
+            </MenuItem>
+            <MenuItem >
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <a className='navItem' href="#projects">Projects</a>
+              </Typography>
+            </MenuItem>    
+          </Box>
+          
+         
+         
           <ResumeButton />
         </Toolbar>
       </AppBar>
