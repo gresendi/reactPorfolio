@@ -1,0 +1,70 @@
+.contactBtnColor {
+  color: white !important;
+  background-color: #05668D !important;
+  float: right;
+}
+
+.MuiTextField-root {
+  width: 300px;
+}
+
+.contactToggler {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  float: right;
+  padding: 0px 10px 10px 0px;
+  transform: translate(0px);
+  flex-grow: 1;
+}
+
+.contactMeTitle {
+  font-size: 30px;
+  text-align: center;
+  padding: 15px 0px 20px 0px;
+}
+
+.messageInput {
+  background-color: white;
+  border: rgb(201, 201, 201) solid 1px;
+  border-radius: 10px;
+  margin-left: 10px !important;
+  margin-right: 40px !important;
+  position: sticky;
+  bottom: 75px;
+}
+
+.submitBtn {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  border: #118AB2 solid 2px;
+  background-color: #118AB2;
+  border-radius: 10px;
+  height: 45px;
+  width: 100px;
+  font-size: 18px;
+  padding: 5px 5px 5px 5px;
+  margin: 5px auto 5px auto;
+}
+
+.submitBtn:hover {
+  background-color: #FFD166;
+  border: #FFD166 solid 2px;
+  cursor: pointer;
+}
+
+.emailSentMsg {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+@media screen and (min-width: 570px) {
+  .messageInput {
+    max-width: 320px;
+    float: right;
+    margin-right: 40px !important;
+    bottom: 70px;
+  }
+}
