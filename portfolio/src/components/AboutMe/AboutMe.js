@@ -5,6 +5,11 @@ import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
 import headshot from '../../images/headshot.jpg'
 import './AboutMe.css'
+import { useState } from 'react'
+import { useSpring, animated,config } from '@react-spring/web'
+
+const AnimFeTurbulence = animated('feTurbulence')
+const AnimFeDisplacementMap = animated('feDisplacementMap')
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2
@@ -25,6 +30,14 @@ const handleLinkedInClick = event => {
 }
 
 const AboutMe = () => {
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 200,
+    config: config.slow,
+    
+  })
+
   return (
     <Box id = 'about' className="aboutMeContainer" sx={{ width: '100%' }}>
       <Grid
@@ -78,11 +91,21 @@ const AboutMe = () => {
             </div>
           </Item>
         </Grid>
-        <Grid item xs={12} sm={6} >
+        <Grid 
+        item xs={12} 
+        sm={6}
+        paddingRight='30px' 
+        >
           <Item className="aboutMeArea deleteCardStyle ">
-            <h1 className="aboutMeTitle">About Me</h1>
-            <p className="aboutMeText p-2 ">{aboutMeText}</p>
-            <p className="aboutMeText p-2">{aboutMeContinued}</p>
+            
+            
+            <animated.h1 style={props}><h1 className="aboutMeTitle">About Me</h1></animated.h1>
+            <animated.p style={props}><p className="aboutMeText p-2 ">{aboutMeText}</p></animated.p>
+            <animated.p style={props}><p className="aboutMeText p-2">{aboutMeContinued}</p></animated.p>
+            
+            
+            
+            
           </Item>
         </Grid>
       </Grid>

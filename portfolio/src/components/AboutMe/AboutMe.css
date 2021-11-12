@@ -5,7 +5,7 @@
 .aboutMeContainer {
   background-color: #CAF0F8;
   margin: 0px;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .deleteCardStyle {
@@ -91,4 +91,15 @@
     margin-left: 300px;
     margin-right: 0px;
   }
+}
+
+.svg {
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
 }
