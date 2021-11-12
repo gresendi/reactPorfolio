@@ -14,7 +14,7 @@ import './ClassTimeline.css'
 
 const ClassTimeline = () => {
   return(
-    <div className="classesContainer">
+    <div id = 'timeline' className="classesContainer">
       <h1 className="timelineTitle">Programming Journey</h1>
       <Timeline position="alternate">
         <TimelineItem>
