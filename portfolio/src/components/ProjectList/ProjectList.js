@@ -1,13 +1,10 @@
 import { useState } from 'react'
-import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
 import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LanguageIcon from '@mui/icons-material/Language'
 import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
-import pubImg from '../../images/project-screenshots/PUB-icon.png'
-import binTreeImg from '../../images/project-screenshots/binary-tree-icon.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import foodForYou from '../../images/project-screenshots/foodForYou.png'
 import mePlants from '../../images/project-screenshots/mePlant.png'
@@ -53,6 +50,8 @@ const projects = [
 ]
 
 const ProjectList = () => {
+
+
   const [ hover, setHover ] = useState({
     0: false,
     1: false,
