@@ -61,7 +61,10 @@ const ProjectList = () => {
   return(
     <>
     
-    <div id = 'projects' className="projectContainer">
+    <div id = 'projects' className="projectContainer"
+        justifyContent="center"
+        alignItems="center"
+        >
       <h1 className="projectsTitle">Project Highlights</h1>
       
         <div>
@@ -70,6 +73,7 @@ const ProjectList = () => {
             spacing={{ xs: 1, sm: 2, md: 4 }}
             justifyContent="center"
             alignItems="center"
+            marginTop='100px'
           >
             {
 

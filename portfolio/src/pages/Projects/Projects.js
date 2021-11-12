@@ -7,11 +7,10 @@ import ImageListItemBar from '@mui/material/ImageListItemBar'
 import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LanguageIcon from '@mui/icons-material/Language'
-
+import Pixel from '../../images/project-screenshots/Pixel.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import foodForYou from '../../images/project-screenshots/foodForYou.png'
 import mePlants from '../../images/project-screenshots/mePlant.png'
-
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
@@ -50,7 +49,16 @@ const projects = [
     gitHubLink: 'https://github.com/gresendi/mePlants',
     deployedSite: 'https://meplant-app.herokuapp.com/',
     description: "This web application is a blog site for plants, and helps a user to track their plants and watering schedules. This application is powered by HTML, CSS, Javascript, Bootstrap, Firebase and others."
+  },
+  {
+    img: Pixel,
+    title: 'Pixel Art Maker',
+    author: '#HTML #CSS #Javascript ',
+    gitHubLink: 'https://github.com/gresendi/pixel-art-maker',
+    deployedSite: 'https://gresendi.github.io/pixel-art-maker/',
+    description: "Simple website where you can create a grid and create pixel art!"
   }
+
 ]
 
 
@@ -61,7 +69,8 @@ const Projects = () => {
   const [hover, setHover] = useState({
     0: false,
     1: false,
-    2: false
+    2: false,
+    3:false
   })
 
   return (
