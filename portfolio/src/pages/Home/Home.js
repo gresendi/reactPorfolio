@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
 
-      <NavBar />
+      <NavBar home= {true}/>
       
       <AboutMe />
       <ClassTimeline />

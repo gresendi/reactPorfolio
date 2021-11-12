@@ -56,7 +56,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 
-const NavBar = () => {
+const NavBar = ({home}) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -101,84 +101,156 @@ const NavBar = () => {
     }
 
   }
+  console.log(home)
+  if(home===true){
+    return (
 
-  return (
-    <Box sx={{ display: 'flex' }}>
-      <AppBar className="navBgColor" position="fixed" open={open}>
-        <Toolbar className="toolbarPadding">
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: 'none' }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <MenuItem >
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a className='navItem' href="#about">Home</a>
-              </Typography>
-            </MenuItem>
-            <MenuItem >
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a className='navItem' href="#timeline">Journey</a>
-              </Typography>
-            </MenuItem>
-            <MenuItem >
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a className='navItem' href="#toolbelt">Toolbelt</a>
-              </Typography>
-            </MenuItem>
-            <MenuItem >
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <a className='navItem' href="#projects">Projects</a>
-              </Typography>
-            </MenuItem>    
-          </Box>
-          
-         
-         
-          <ResumeButton />
-        </Toolbar>
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          '& .MuiDrawer-paper': {
+
+
+      <Box sx={{ display: 'flex' }}>
+        <AppBar className="navBgColor" position="fixed" open={open}>
+          <Toolbar className="toolbarPadding">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              <MenuItem >
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <a className='navItem' href="#about">Home</a>
+                </Typography>
+              </MenuItem>
+              <MenuItem >
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <a className='navItem' href="#timeline">Journey</a>
+                </Typography>
+              </MenuItem>
+              <MenuItem >
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <a className='navItem' href="#toolbelt">Toolbelt</a>
+                </Typography>
+              </MenuItem>
+              <MenuItem >
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <a className='navItem' href="#projects">Projects</a>
+                </Typography>
+              </MenuItem>
+            </Box>
+
+
+
+            <ResumeButton />
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
             width: drawerWidth,
-            boxSizing: 'border-box',
-          },
-        }}
-        variant="persistent"
-        anchor="left"
-        open={open}
-        className="navBgColor"
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          {['Home', 'Projects', 'Toolbelt', 'Resume'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {displayIcon(index)}
-              </ListItemIcon>
-              <Link className="menuItem" to={defineRoute(index)}>
-                <ListItemText primary={text} />
-              </Link>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
-    </Box>
-  )
+            flexShrink: 0,
+            '& .MuiDrawer-paper': {
+              width: drawerWidth,
+              boxSizing: 'border-box',
+            },
+          }}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          className="navBgColor"
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <List>
+            {['Home', 'Projects', 'Toolbelt', 'Resume'].map((text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {displayIcon(index)}
+                </ListItemIcon>
+                <Link className="menuItem" to={defineRoute(index)}>
+                  <ListItemText primary={text} />
+                </Link>
+              </ListItem>
+            ))}
+          </List>
+        </Drawer>
+      </Box>
+    )
+
+
+  }
+  else{
+    return (
+
+
+
+      <Box sx={{ display: 'flex' }}>
+        <AppBar className="navBgColor" position="fixed" open={open}>
+          <Toolbar className="toolbarPadding">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Box sx={{ flexGrow: 1 }} />
+            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+              
+            </Box>
+
+
+
+            <ResumeButton />
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          sx={{
+            width: drawerWidth,
+            flexShrink: 0,
+            '& .MuiDrawer-paper': {
+              width: drawerWidth,
+              boxSizing: 'border-box',
+            },
+          }}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          className="navBgColor"
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <List>
+            {['Home', 'Projects', 'Toolbelt', 'Resume'].map((text, index) => (
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {displayIcon(index)}
+                </ListItemIcon>
+                <Link className="menuItem" to={defineRoute(index)}>
+                  <ListItemText primary={text} />
+                </Link>
+              </ListItem>
+            ))}
+          </List>
+        </Drawer>
+      </Box>
+    )
+  }
+
+  
 }
 
 export default NavBar
