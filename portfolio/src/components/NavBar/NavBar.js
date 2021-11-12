@@ -124,6 +124,11 @@ const NavBar = () => {
             </MenuItem>
             <MenuItem >
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <a className='navItem' href="#timeline">Journey</a>
+              </Typography>
+            </MenuItem>
+            <MenuItem >
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <a className='navItem' href="#toolbelt">Toolbelt</a>
               </Typography>
             </MenuItem>
