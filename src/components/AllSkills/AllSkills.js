@@ -2,7 +2,7 @@ import { styled } from '@mui/material/styles'
 import Grid from '@mui/material/Grid'
 import Paper from '@mui/material/Paper'
 import Box from '@mui/material/Box'
-import PageTitle from '../../components/PageTitle/PageTitle'
+import PageTitle from '../PageTitle/PageTitle'
 import './AllSkills.css'
 
 const Item = styled(Paper)(({ theme }) => ({
