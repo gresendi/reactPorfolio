@@ -62,7 +62,7 @@ const ClassTimeline = () => {
             <Typography variant="h6" component="span">
               Moved to Wisconsin
             </Typography>
-            <Typography>Worked Retail :(</Typography>
+            <Typography>Worked Retail</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
