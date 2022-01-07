@@ -11,6 +11,7 @@ import Pixel from '../../images/project-screenshots/Pixel.png'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import foodForYou from '../../images/project-screenshots/foodForYou.png'
 import mePlants from '../../images/project-screenshots/mePlant.png'
+import glanceImg from '../../images/project-screenshots/glanceImg.jpg'
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
@@ -26,6 +27,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const projects = [
   {
+    img: glanceImg,
+    title: 'Glance',
+    author: '#React.js #Node.js #MongoDB #Express',
+    gitHubLink: 'https://github.com/gresendi/glance',
+    deployedSite: 'https://glanceatnature.herokuapp.com/',
+    description: "A full MERN Stack application geared toward productivity with a hint of nature. Includes local weather information, link managment, task managment, inspirational quotes, and random images of nature! "
+  },
+  {
     img: joferImg,
     title: 'Jofer',
     author: '#React.js #Node.js #MongoDB',
@@ -35,14 +44,6 @@ const projects = [
     description: `A full MERN Stack application geared toward helping employers and HR departments give their applicants the best application experience possible, while streamlining communication during the hiring process.`
   },
   {
-    img: foodForYou,
-    title: 'Food for You',
-    author: '#HTML #CSS #Javascript',
-    gitHubLink: 'https://github.com/gresendi/FoodForYou',
-    deployedSite: 'https://gresendi.github.io/FoodForYou/',
-    description: 'A basic web application designed to help with deciding on what to cook. Enter in the ingredients that you have in your fridge and click on the "Recipes" tab. The system will generate a list of recipes that includes the ingredients you have inputed in. '
-  },
-  {
     img: mePlants,
     title: 'mePlants',
     author: '#HTML #CSS #Javascript #Bootstrap, #Firebase',
@@ -50,6 +51,15 @@ const projects = [
     deployedSite: 'https://meplant-app.herokuapp.com/',
     description: "This web application is a blog site for plants, and helps a user to track their plants and watering schedules. This application is powered by HTML, CSS, Javascript, Bootstrap, Firebase and others."
   },
+  {
+    img: foodForYou,
+    title: 'Food for You',
+    author: '#HTML #CSS #Javascript',
+    gitHubLink: 'https://github.com/gresendi/FoodForYou',
+    deployedSite: 'https://gresendi.github.io/FoodForYou/',
+    description: 'A basic web application designed to help with deciding on what to cook. Enter in the ingredients that you have in your fridge and click on the "Recipes" tab. The system will generate a list of recipes that includes the ingredients you have inputed in. '
+  },
+  
   {
     img: Pixel,
     title: 'Pixel Art Maker',

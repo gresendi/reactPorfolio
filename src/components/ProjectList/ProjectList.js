@@ -8,7 +8,7 @@ import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import foodForYou from '../../images/project-screenshots/foodForYou.png'
 import mePlants from '../../images/project-screenshots/mePlant.png'
-import glanceImg from '../../images/project-screenshots/glanceImg.png'
+import glanceImg from '../../images/project-screenshots/glanceImg.jpg'
 import './ProjectList.css'
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
