@@ -8,6 +8,7 @@ import SeeMoreBtn from '../SeeMoreBtn/SeeMoreBtn'
 import joferImg from '../../images/project-screenshots/JOFER.png'
 import foodForYou from '../../images/project-screenshots/foodForYou.png'
 import mePlants from '../../images/project-screenshots/mePlant.png'
+import glanceImg from '../../images/project-screenshots/glanceImg.png'
 import './ProjectList.css'
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
@@ -22,6 +23,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const projects = [
+  {
+    img: glanceImg,
+    title: 'Glance',
+    author: '#React.js #Node.js #MongoDB #Express',
+    gitHubLink: 'https://github.com/gresendi/glance',
+    deployedSite: 'https://glanceatnature.herokuapp.com/',
+    description: "A full MERN Stack application geared toward productivity with a hint of nature. Includes local weather information, link managment, task managment, inspirational quotes, and random images of nature! "
+  },
   {
     img: joferImg,
     title: 'Jofer',
@@ -52,21 +61,21 @@ const projects = [
 const ProjectList = () => {
 
 
-  const [ hover, setHover ] = useState({
+  const [hover, setHover] = useState({
     0: false,
     1: false,
     2: false
   })
 
-  return(
+  return (
     <>
-    
-    <div id = 'projects' className="projectContainer"
+
+      <div id='projects' className="projectContainer"
         justifyContent="center"
         alignItems="center"
-        >
-      <h1 className="projectsTitle">Project Highlights</h1>
-      
+      >
+        <h1 className="projectsTitle">Project Highlights</h1>
+
         <div>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -114,16 +123,16 @@ const ProjectList = () => {
                 </Item>
               ))
             }
-            
+
 
           </Stack>
           <SeeMoreBtn path="projects" />
         </div>
-     
-    </div>
-        </>
 
-    
+      </div>
+    </>
+
+
   )
 }
 
